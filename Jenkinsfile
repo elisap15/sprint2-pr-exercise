@@ -1,5 +1,9 @@
 pipeline {
     agent any
+
+    tools { 
+        maven 'Lab Maven'
+    }
     stages {
         stage('Checkout') {
             steps {
